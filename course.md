@@ -21,11 +21,35 @@ Machine Learning and Operational
 <!--
 footer: Architecture
 -->
+
+# Monolothic vs Web / API
+
+#### And some communication protocol
+
+- SOAP
+- REST
+- GRPC
+
+---
+
+<!--
+push vs pull
+-->
+
+# Workers
+
+---
+
+# CDN
+
+---
+
 <!--
 - Build
 - Test
 - Deploy
 -->
+
 # CI/CD
 
 - Continuous Integration
@@ -47,49 +71,164 @@ footer: Architecture
 
 ---
 
-# archi
+# Versioning
 
-ci build/test/deploy
-sync / async
-cache
-queue
-storage types
-comm protocols rust/soap/grpc
-semantic versioning
-observability
-worker push vs pull
+- Semantic
+- CalVer
 
-# ml
+---
 
-## supervised
+# Caching
 
-linear
-knn
-decision_tree
-random forest
-svm kernel
-mlp
+- Redis
+- Memcached
+- MongoDB
+- AWS DynamoDB
+- Azure Cosmos DB
 
-## unsupervised
+---
 
-pca
-nmf
-t-sne
+<!--
+Client connection
+Wait for server response?
+HTTP Timeout
+Example with database creation
+-->
+
+# Sync vs Async
+
+---
+
+# Queuing
+
+- RabbitMQ
+- MQTT
+- Kafka
+
+---
+
+<!--
+docker databases
+-->
+
+# Stateless / Stateful
+
+---
+
+<!--
+Object: S3, AWS, hot vs cold
+Block: VM, like disks
+FS: mount point
+-->
+
+# Storage
+
+- Object
+- Block
+- File System
+
+---
+
+# Observability
+
+<!--
+Rate Errors Duration
+Utilization Saturation Errors
+-->
+
+- RED
+- USE
+
+Some software:
+
+- Prom
+- Grafana
+- Alertmanager
+
+---
+
+<!--
+footer: Machine Learning
+-->
+
+# Now the Machine Learning part!
+
+- Supervised
+- Unsupervised
+- Encoding
+- Data preparation
+
+---
+
+# Supervised algorithm
+
+- Linear
+- kNN
+- Decision tree
+- Random forest
+- SVM kernel
+- Multi Layer Perceptron (MLP)
+
+---
+
+# Unsupervised algorithm
+
+- PCA
+- NMF
+- t-SNE
+
+---
 
 ### clustering
 
-kmoy
-agglo
-dbscan
+- kMoy
+- Agglo
+- DBSCAN
 
-# preparation
+----
 
-one-hot
-	data preparation
+<!--
+One hot and data preparation
+-->
 
-# mlops
+# Preparation
 
-expose api
-example api reco faciale
-real time vs aynsc
-local vs remote model
+- One-hot
+
+---
+
+<!--
+footer: MLOps
+-->
+
+<!--
+Tutorial aim: exposing an API
+-->
+
+# Now let's do everything together!
+
+---
+
+# An example
+
+Physical shop, pay with your face.
+
+---
+
+<!--
+Save model, compile it in the container
+-->
+
+# Real time vs asynchronous
+
+---
+
+<!--
+Store model in container or load from S3
+-->
+
+# Local vs remote model
+
+---
+
+# Any question?
