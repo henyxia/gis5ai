@@ -162,6 +162,13 @@ footer: Machine Learning
 
 # Supervised algorithm
 
+<!--
+linear: y = w0*x0 + wn*xn +b (w and b parameters)
+svm: support vector machine
+        krbf(x1, x2) = exp -gamma*(|| x1 - x2 ||)
+mlp: see page 108
+-->
+
 - Linear
 - kNN
 - Decision tree
@@ -173,6 +180,16 @@ footer: Machine Learning
 
 # Unsupervised algorithm
 
+<!--
+PCA: see page 144 - transform correlated into uncorrelated data
+NMF: see page 159 - reduce dimensions too
+    pca: orthogonal features, maximal variance
+    nmf: components and coeff non negatives
+t-SNE: see page 167 - manifold learning (apprentissage de variete)
+    explode then regroup values
+    unusable on test data
+-->
+
 - PCA
 - NMF
 - t-SNE
@@ -180,6 +197,12 @@ footer: Machine Learning
 ---
 
 ### clustering
+
+<!--
+kMoy: create centers
+Agglo: clustering
+DBSCAN: see page 189 - clustering with empty space control (see two moons)
+-->
 
 - kMoy
 - Agglo
